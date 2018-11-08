@@ -21,6 +21,9 @@ import pandas as pd
 现在我们做完显著性检测后，检测边缘一共有多少特异点？我们不妨首先把周围一圈的所有值都统计出来，然后送到iforest里面去，去检测我们的特异点。
 当然，对于我们这个工作，我们使用的超像素分割去先对原图进行特征处理，这样每一个像素的标签值都有一个对应点，每一个标签值又有他的特征值，我们就对
 这些特征值进行建模然后使用iforest去检测特异点。
+
+论文链接：http://cs.nju.edu.cn/zhouzh/zhouzh.files/publication/icdm08b.pdf
+        http://cs.nju.edu.cn/zhouzh/zhouzh.files/publication/tkdd11.pdf
 """
 
 gt_image_path = "IsolationForest/gt"
